@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_airbnb/views/pages/post/home/home_body_banner.dart';
 import 'package:flutter_airbnb/views/pages/post/home/home_body_popular.dart';
