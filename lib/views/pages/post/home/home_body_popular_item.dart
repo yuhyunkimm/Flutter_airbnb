@@ -20,7 +20,7 @@ class HomeBodyPopularItem extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: gap_xl),
       child: Container(
         constraints: BoxConstraints(
-          maxWidth: 320,
+          minWidth: 320,
         ),
         child: SizedBox(
           width: popularItemWidth,

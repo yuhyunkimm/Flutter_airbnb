@@ -4,7 +4,6 @@ import 'package:flutter_airbnb/core/size.dart';
 import 'package:flutter_airbnb/core/styles.dart';
 
 class HomeBodyBanner extends StatelessWidget {
-  const HomeBodyBanner({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

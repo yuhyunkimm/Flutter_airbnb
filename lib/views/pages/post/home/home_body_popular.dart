@@ -20,18 +20,6 @@ class HomeBodyPopular extends StatelessWidget {
     );
   }
 
-  Widget _buildPopularList() {
-    return Wrap(
-      children: [
-        HomeBodyPopularItem(id: 0),
-        SizedBox(width: 7.5),
-        HomeBodyPopularItem(id: 1),
-        SizedBox(width: 7.5),
-        HomeBodyPopularItem(id: 2),
-      ],
-    );
-  }
-
   Widget _buildPopularTitle() {
     return Column(
       children: [
@@ -47,4 +35,21 @@ class HomeBodyPopular extends StatelessWidget {
       ],
     );
   }
+
+  Widget _buildPopularList() {
+    return Wrap(
+      children: [
+        HomeBodyPopularItem(id: 0),
+        SizedBox(width: 7.5),
+        HomeBodyPopularItem(id: 1),
+        SizedBox(width: 7.5),
+        HomeBodyPopularItem(id: 2),
+      ],
+    );
+  }
 }
+
+
+
+
+

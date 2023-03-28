@@ -8,13 +8,16 @@ class HomeHeaderAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        // ctrl + alt + m
-        _buildAppBarlogo(),
-        _buildAppBarmenu(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(gap_m),
+      child: Row(
+        children: [
+          // ctrl + alt + m
+          _buildAppBarlogo(),
+          Spacer(),
+          _buildAppBarmenu(),
+        ],
+      ),
     );
   }
 
@@ -32,7 +35,10 @@ class HomeHeaderAppbar extends StatelessWidget {
     return Row(
       children: [
         Image.asset("assets/logo.png",
-            width: 30, height: 30, color: kAccentColor),
+            width: 30,
+            height: 30,
+            color: Colors.redAccent,
+        ),
         SizedBox(width: gap_s),
         Text(
           "Airbnb",
