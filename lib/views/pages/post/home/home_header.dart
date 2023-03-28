@@ -8,11 +8,19 @@ class HomeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        HomeHeaderAppbar(),
-        HomeHeaderForm(),
-      ],
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/background.jpeg"),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: Column(
+        children: [
+          HomeHeaderAppbar(),
+          HomeHeaderForm(),
+        ],
+      ),
     );
   }
 }
