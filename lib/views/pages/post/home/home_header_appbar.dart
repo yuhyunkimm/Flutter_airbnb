@@ -8,19 +8,28 @@ class HomeHeaderAppbar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
-          children: [Image.asset("assets/logo.png"), Text("Airbnb")],),
-        Row(
-          children: [
-            InkWell(
-              onTap: (){},
-                child: Text("로그인")),
-          InkWell(
-              onTap: (){},
-                child: Text("회원가입")),
-          ],
-        ),
+        // ctrl + alt + m
+        _logo(),
+        _menu(),
       ],
     );
+  }
+
+  Widget _menu() {
+    return Row(
+        children: [
+          InkWell(
+            onTap: (){},
+              child: Text("로그인")),
+        InkWell(
+            onTap: (){},
+              child: Text("회원가입")),
+        ],
+      );
+  }
+
+  Widget _logo() {
+    return Row(
+        children: [Image.asset("assets/logo.png"), Text("Airbnb")],);
   }
 }

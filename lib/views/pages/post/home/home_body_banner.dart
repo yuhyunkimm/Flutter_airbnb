@@ -6,6 +6,20 @@ class HomeBodyBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Stack(
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Image.asset(
+            "assets/banner.jpg",
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: 320,
+          ),
+        ),
+
+
+      ],
+    );
   }
 }
