@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_airbnb/views/pages/post/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
